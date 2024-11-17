@@ -1,24 +1,14 @@
 Comparison for image upscaling models and algorithms
 
-| Model/Algorithm | Pros | Cons                                                                   | Example | 
-|-----------------|------|------------------------------------------------------------------------|---------|
-| NAFNet          |      | Pre-trained models only for 4x, 2x<br/>Not effective for small images  |         |
-|                 |      |                                                                        |         |
-|                 |      |                                                                        |         |
+| Model/Algorithm | Pros | Cons                                                                   | 
+|-----------------|------|------------------------------------------------------------------------|
+| NAFNet          |      | Pre-trained models only for 4x, 2x<br/>Not effective for small images  |
 
 # Install
 <details open>
     <summary>
         <b>Expand</b>
     </summary>
-
-## Repository
-```shell
-$ git clone https://github.com/isbicf/image_upscaling.git
-$ cd image_upscaling
-$ git flow init
-$ git branch
-```
 
 ## Install Python and Packages
 ```shell
@@ -27,7 +17,7 @@ $ sudo add-apt-repository ppa:deadsnakes/ppa
 $ sudo apt update
 $ sudo apt install python3.12 python3.12-venv python3.12-dev
 
-# Virtual environment
+# Virtual environment (Ubuntu)
 $ python3.12 -m venv venv
 $ source venv/bin/activate
 
@@ -57,8 +47,6 @@ $ source venv/bin/activate
 ## Install 
 ### Download 
 - Download the source code from [NAFNet GitHub](https://github.com/megvii-research/NAFNet) \
-  <img src="./upscaling/nafnet/Download NAFNet.png">
-
 - Decompress the zip file and move to <project home>/upscaling\
   i.e. $ mv ~/Download/NAFNet_main /projects/image_upscaling/NAFNet
 
@@ -119,20 +107,10 @@ img = cv2.imread('<file path>')
   (venv) $ python -m upscaling.nafnet.tester
   (venv) $ ls -l data/nafnet
   ```
-- View the output images and verify \
-  i.e.\
-  ![]()
+- View the output images and verif
   - The first image is the original image
   - The second is a 4x-resized image by OpenCV
   - The third is a de-blurred image of the second
   - The last is a 4x-resized image by the NAFNet super-resolution model
-
-</details>
-
-# Testing Device
-<details open>
-    <summary>
-        <b>Expand</b>
-    </summary>
 
 </details>
